@@ -5,9 +5,6 @@ import pandas as pd
 import numpy as np
 
 # Load artifacts
-encoder = joblib.load('category_encoder.pkl')
-scaler = joblib.load('feature_scaler.pkl')
-le = joblib.load('label_encoder.pkl')
 model = joblib.load('best_model.pkl')
 
 st.title('🍽️ Restaurant Menu Profitability Predictor')
@@ -93,4 +90,5 @@ This model predicts menu profitability based on:
 - Premium ingredients
 - Beverage status
 - Menu category
+
 """)
